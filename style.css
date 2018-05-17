@@ -5,6 +5,7 @@ body{
 }
 #img: hover
 {
+	
 	cursor: pointer;
 }
 button{ 
@@ -35,6 +36,7 @@ button{
 #content{
 	padding-left: 20px;
 }
+
 
 .article-title{
 	color: red;
