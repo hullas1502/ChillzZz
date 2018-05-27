@@ -13,7 +13,7 @@ $( document ).ready(function() {
 			sessionStorage.setItem('name', document.getElementById("resto").value);
 			
 		}
-		sessionStorage.setItem("location", $("#restoplace").val());
+		sessionStorage.setItem("location", $("#restoplace").prop("disabled") ? "" : $("#restoplace").val());
 		document.getElementById("checkBox").checked = false;
 		$("#resto").val("");
 		$("#restoplace").val("");
@@ -24,7 +24,10 @@ $( document ).ready(function() {
 });
 
 $('input[name="rating1"]').change(function(){
- 	console.log(this.value);
  	sessionStorage.setItem('star', this.value);
 	
+});
+
+$("#checkBox").change(function(){
+	$("#restoplace").attr("disabled", this.checked);
 });
