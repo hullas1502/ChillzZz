@@ -32,7 +32,7 @@
   <h1>Sign Up</h1>
   <h3>Sign up is used to customize your preferences about food</h3>
   <span><label>Username: </label></span>
-  <span><input type = "text"></input></span>
+  <span><input id="username" type = "text"></input></span>
   <span><label>E-mail: </label></span>
   <span><input type = "text"></input></span>
   <span><label>Password: </label></span>
@@ -116,7 +116,7 @@
        </div>
   </div>
   <br />
-  <button onclick="location.href='search.html'">Register</button>
+  <button id="register">Register</button>
 
   
   
@@ -129,8 +129,13 @@
 	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 	<script src="jquery/js/jquery-1.9.0.min.js"></script>
     <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
-	<script src="./main_page.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" async defer></script>
+	<script type="text/javascript">
+		$("#register").click(function(){
+			sessionStorage.setItem("username", $("#username").val());
+			document.location.href="search.html";
+		})
+	</script>
 
   </body>
 </html>

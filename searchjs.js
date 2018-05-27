@@ -19,6 +19,7 @@ $( document ).ready(function() {
 		$("#restoplace").val("");
 		document.getElementById("field1_star"+sessionStorage.getItem('star')).checked = false;
 
+
     });
 
 });
@@ -31,3 +32,5 @@ $('input[name="rating1"]').change(function(){
 $("#checkBox").change(function(){
 	$("#restoplace").attr("disabled", this.checked);
 });
+
+$("#username").html(sessionStorage.getItem("username"));
