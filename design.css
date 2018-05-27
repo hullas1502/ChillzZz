@@ -19,7 +19,7 @@
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-	font-family: cursive;
+	font-family: Times New Roman;
     line-height:1.0;
     color:#ddd;
     text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
@@ -57,21 +57,21 @@
 }
 
 h1, h2, h3, label {
-    font-family: cursive;
+    font-family: Times New Roman;
    } 
  
 p {
-    font-family: cursive;
+    font-family: Times New Roman;
 	}
 .row {
   display: grid;
   grid-template-columns: 700px 200px 200px 200px;
   background-color: white;
   color: black;
-  font-family: cursive;
+  font-family: Times New Roman;
 }
 button{ 
-	font-family: cursive;
+	font-family: Times New Roman;
     background-color: #555555;
     border: none;
     color: white;
@@ -88,7 +88,7 @@ button{
   border-radius: 5px;
   padding: 20px;
   font-size: 14px;
-  font-family: cursive;
+  font-family: Times New Roman;
 }
 .wrapper {
   margin-left: 130px;
@@ -97,7 +97,7 @@ button{
   grid-gap: 20px;
   background-color: #fff;
   color: #444;
-  font-family: cursive;
+  font-family: Times New Roman;
 }
 
 .img {
