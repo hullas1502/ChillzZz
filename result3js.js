@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 	$(".star").attr("src", "star"+sessionStorage.getItem('star')+".PNG");
-	$("#h5").text("Restaurants with spice rate "+sessionStorage.getItem('star'))
+	$("#resto_name").text(sessionStorage.getItem('name'));
+	$("#search_header").text("Restaurant \""+sessionStorage.getItem('name')+"\"");
 	if(sessionStorage.getItem("location") != "")
 		$(".address").text("Address: "+sessionStorage.getItem("location"));
 });

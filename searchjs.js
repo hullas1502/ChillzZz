@@ -3,18 +3,28 @@ $( document ).ready(function() {
 	$("input").value = "";
 	
 	$("#search").click(function(){
-		if(document.getElementById("field1_star3").checked = true){
+		if(document.getElementById("resto").value == ""){
 			document.location.href = 'result.html';
-			document.getElementById("field1_star3").checked = false;
-			document.getElementById("checkBox").checked = false;
+			
 		}
 
-	    if(document.getElementById("resto").value == "Choongman"){
+	    else{
 			document.location.href = 'result3.html';
-			document.getElementById("resto").value == "";
+			sessionStorage.setItem('name', document.getElementById("resto").value);
+			
 		}
-        $("#field1_star3").checked = false;
-		$("input").value = "";
+		sessionStorage.setItem("location", $("#restoplace").val());
+		document.getElementById("checkBox").checked = false;
+		$("#resto").val("");
+		$("#restoplace").val("");
+		document.getElementById("field1_star"+sessionStorage.getItem('star')).checked = false;
+
     });
 
+});
+
+$('input[name="rating1"]').change(function(){
+ 	console.log(this.value);
+ 	sessionStorage.setItem('star', this.value);
+	
 });
