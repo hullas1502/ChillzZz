@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-	$(".star").attr("src", "star"+sessionStorage.getItem('star')+".PNG");
+	if(sessionStorage.getItem('star')!=null)
+		$(".star").attr("src", "star"+sessionStorage.getItem('star')+".PNG");
 	$("#resto_name").text(sessionStorage.getItem('name'));
 	$("#search_header").text("Restaurant \""+sessionStorage.getItem('name')+"\"");
 	if(sessionStorage.getItem("location") != "")
