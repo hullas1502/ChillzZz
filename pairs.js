@@ -1,4 +1,4 @@
-var pairs = [{"resto":"Choongman"},
+var pairs = [{"resto":"Choongman", "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-TeJJM--q41h1aKAOK-B7UWJACNJgH7OBZEC5fUm1D5AaAV6"},
 {"resto":"BBQ", "pic": "http://cdn-image.myrecipes.com/sites/default/files/styles/medium_2x/public/image/recipes/ay/08/barbeque-chicken-ay-1875596-x.jpg?itok=ZXKCUiIp"},
 {"resto":"Hoolala", "pic": "https://4.bp.blogspot.com/-vSGDba9ulPY/V-jG8WIF4YI/AAAAAAAAbtQ/c3qS_oaSbQUkiGX2NOAJLeB0vP6OEswhgCLcB/s1600/IMG_0795.JPG"},
 {"resto":"Kentoukki", "pic": "https://img.buzzfeed.com/buzzfeed-static/static/2015-01/27/16/campaign_images/webdr04/a-beginners-guide-to-eating-at-a-korean-restaurant-2-12894-1422395599-22_dblbig.jpg"},
@@ -15,5 +15,5 @@ var pairs = [{"resto":"Choongman"},
 {"resto":"Hard Rock", "pic": "https://www.10mag.com/directory/wp-content/sabai/File/files/bc6b1b257410643439b8d5b290ab2c87.jpg"},
 {"resto":"Noodle", "pic": "https://mrandmrshalal.com/wp-content/uploads/2017/04/potala-halal-food-restaurant-in-seoul-korea.png"},
 {"resto":"Moshissoyo", "pic": "https://zone-thebestsingapore-bhxtb9xxzrrdpzhqr.netdna-ssl.com/wp-content/uploads/2014/06/Best-Korean-Restaurant-Singapore.jpg"},
-{"resto":"Western", "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZpo5dXtrsIlUBNdSQRe1Hyp86O8IPNcOcvPEIma2B4mJPYTYdA"},
+{"resto":"Western", "pic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZpo5dXtrsIlUBNdSQRe1Hyp86O8IPNcOcvPEIma2B4mJPYTYdA"}
 ];
