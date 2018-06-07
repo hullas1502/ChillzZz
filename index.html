@@ -130,19 +130,16 @@
     <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" async defer></script>
 	<script type="text/javascript">
-//		document.getElementById("register").disabled = true;
-	//	if((document.getElementById("field5_star5").checked ==true) || (document.getElementById("field5_star4").checked ==true ) || (document.getElementById("field5_star3").checked ==true) || (document.getElementById("field5_star2").checked ==true) || (document.getElementById("field5_star1").checked == true)){
-		//	document.getElementById("register").disabled = false;
-	//	}
 		$("#register").click(function(){
-			sessionStorage.setItem("username", $("#username").val());
-//			if(((document.getElementById("field5_star5").checked ==true) || (document.getElementById("field5_star4").checked ==true) || (document.getElementById("field5_star3").checked ==true))&&((document.getElementById("field3_star5").checked ==true) || (document.getElementById("field3_star4").checked ==true) || (document.getElementById("field3_star3").checked ==true)))
-	//	{
-		document.location.href="search.html";	
-		//}
-	//	else{
-		//	document.location.href="search1.html";
-		//	}
+			var sum = 0;
+			for (var i = 1; i <= 5; i++) {
+				sum = sum + Number($('input[name=rating'+i+']:checked').val());
+			}
+			sum/=5;
+			if (sum>=2.5)
+				document.location.href="search.html";		
+			else
+				document.location.href="search1.html";
 		})
 
 	</script>
