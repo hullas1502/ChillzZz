@@ -1,11 +1,20 @@
 $( document ).ready(function() {
 	var resto_pairs = pairs;
 	var randnum1 = getRandomInt(pairs.length);
-	var randnum2 = getRandomInt(pairs.length);
-	var randnum3 = getRandomInt(pairs.length);
-	var randnum4 = getRandomInt(pairs.length);
-	var randnum5 = getRandomInt(pairs.length);
-	var randnum6 = getRandomInt(pairs.length);
+	if(randnum1 < 5){
+		var randnum2 = randnum1+1;
+		var randnum3 = randnum1+2;
+		var randnum4 = randnum1+3;
+		var randnum5 = randnum1+4;
+		var randnum6 = randnum1+5;
+	}
+	else{
+		var randnum2 = randnum1-1;
+		var randnum3 = randnum1-2;
+		var randnum4 = randnum1-3;
+		var randnum5 = randnum1-4;
+		var randnum6 = randnum1-5;
+	}
 	
     var resto1 = pairs[randnum1].resto;
 	var resto2 = pairs[randnum2].resto;
@@ -34,6 +43,7 @@ $( document ).ready(function() {
 	document.getElementById("pic4").src= pic4;
 	document.getElementById("pic5").src= pic5;
 	document.getElementById("pic6").src= pic6;
+	
 	
 	if(sessionStorage.getItem('star')!=null){
 		$(".star").attr("src", "star"+sessionStorage.getItem('star')+".PNG");

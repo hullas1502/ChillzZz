@@ -136,6 +136,7 @@
 				sum = sum + Number($('input[name=rating'+i+']:checked').val());
 			}
 			sum/=5;
+			sessionStorage.setItem("username", $("#username").val());
 			if (sum>=2.5)
 				document.location.href="search.html";		
 			else
